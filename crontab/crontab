@@ -1,0 +1,2 @@
+0,30 * * * * root /usr/bin/flock -n /tmp/execution.lockfile /usr/local/bin/python "/app/Control Center Execution.py" >> /var/log/docker/svc-bizops-controls/svc-bizops-controls-execution.log 2>&1
+0 3 * * * root /usr/local/bin/python "/app/Control Center Failed Audits Execution.py" >> /var/log/docker/svc-bizops-controls/svc-bizops-controls-failedaudits.log 2>&1
